@@ -167,6 +167,48 @@ function TourGuide:UpdateStatusFrame()
 	local zonename = self:GetObjectiveTag("Z", nextstep) or self.zonename
 	self:Debug( string.format("Progressing to objective \"%s %s\"", action, quest))
 
+	-- Test for completed objectives and mark them done
+	if action == "SETHEARTH" and self.db.char.hearth == quest then 
+		self:Debug("SETHEARTH objective already complete:", quest)
+		return self:SetTurnedIn(nextstep, true) 
+	end
+
+	local zonetext, subzonetext, subzonetag = GetZoneText(), GetSubZoneText(), self:GetObjectiveTag("SZ", nextstep)
+	if (action == "RUN" or action == "FLY" or action == "HEARTH" or action == "BOAT") and (subzonetext == quest or subzonetext == subzonetag or zonetext == quest or zonetext == subzonetag) then 
+		self:Debug("Movement objective already complete:", action, quest)
+		return self:SetTurnedIn(nextstep, true) 
+	end
+
+	if action == "KILL" or action == "NOTE" then
+		local lootitem = self:GetObjectiveTag("L", nextstep)
+		local lootqty = tonumber(select(2, self:GetObjectiveTag("L", nextstep))) or 1
+		local haslootitem = lootitem and self.GetItemCount(lootitem) >= lootqty
+		
+		if not optional and haslootitem then 
+			self:Debug("KILL/NOTE with required items already complete:", quest)
+			return self:SetTurnedIn(nextstep, true) 
+		end
+
+		local questobj, questtext = self:GetObjectiveTag("Q", nextstep), self:GetObjectiveTag("QO", nextstep)
+		if questobj and questtext then
+			local qi = self:GetQuestLogIndexByName(questobj)
+			if qi then
+				for lbi=1,GetNumQuestLeaderBoards(qi) do
+					self:Debug(questobj, questtext, qi, GetQuestLogLeaderBoard(lbi, qi))
+					if GetQuestLogLeaderBoard(lbi, qi) == questtext then 
+						self:Debug("Quest objective already complete:", questobj, questtext)
+						return self:SetTurnedIn(nextstep, true) 
+					end
+				end
+			end
+		end
+	end
+
+	if action == "PET" and self.db.char.petskills[quest] then 
+		self:Debug("Pet skill already learned:", quest)
+		return self:SetTurnedIn(nextstep, true) 
+	end
+
 	-- Mapping
 	if (TomTom or Cartographer_Waypoints) and (lastmapped ~= quest or lastmappedaction ~= action) then
 		lastmappedaction, lastmapped = action, quest
