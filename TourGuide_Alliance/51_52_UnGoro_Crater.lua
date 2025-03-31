@@ -35,7 +35,6 @@ A The Apes of Un'Goro |QID|4289| |N|Torwa Pathfinder in Un'Goro (71.63, 75.95)|
 A The Fare of Lar'korwi |QID|4290| |N|Torwa Pathfinder in Un'Goro (71.63, 75.95)|
 C The Fare of Lar'korwi |QID|4290| |N|Collect Piece of Threshadon Carcass from the Carcass in The Marshlands (68.64, 56.57)| |OBJ|3191|
 
-N As you go... |AYG|4504| |QID|4284| |N|Collect 7 of each Green, Blue, Yellow and Red Power Crystals, they are scattered throughout Un'Goro| |OBJ|2973, 2971, 2972, 2974|
 R Marshal's Refuge |QID|4243| |N|Travel to Marshal's Refuge (45.78, 13.10)|
 A Shizzle's Flyer |QID|4503| |N|Shizzle in Marshal's Refuge (44.23, 11.52)|
 A Beware of Pterrordax |QID|4501| |N|Wanted Sign in Marshal's Refuge (43.59, 8.31)|
@@ -48,10 +47,17 @@ f Marshal's Refuge |QID|4504| |N|Speak to Gryfe and grab flight path for Marshal
 A Williden's Journal |QID|3884| |N|Gryfe in Marshal's Refuge (45.24, 5.85)| |L|11116| |O|
 A Chasing A-Me 01 (Part 1)|QID|4243| |N|Karna Remtravel in Lakkari Tar Pits (46.39, 13.43)|
 
-N Please Read |QID|4501| |N|As you go... . <b>Collect 7 of each Green, Blue, Yellow and Red Power Crystals<br/><b>Kill any Bloodpetal mobs for 15 Bloodpetal<br/><b>Keep all Un'Goro Soil that you collect, you will need around 45 of these for quests later<br/><b>Don't collect Bloodpetal Sprout, as they don't provide any XP<br/><b>Dinosaur Bone will drop from many different mobs as you do the other quests. Tick this step| |OBJ|2973, 2971, 2972, 2974|
+N Un'Goro Collection Notes |QID|4501| |N|As you go through Un'Goro, you'll need to collect various items. Keep all Un'Goro Soil (need ~45 for quests later). Don't collect Bloodpetal Sprout as they don't provide XP. Dinosaur Bones will drop from many mobs.|
+
+LOOT 7 Green Power Crystal |AYG|4501| |QID|4284.1| |N|As you go... Collect throughout Un'Goro Crater. These crystals can be found on the ground| [L][11185][7] |OBJ|2973|
+LOOT 7 Blue Power Crystal |AYG|4501| |QID|4284.2| |N|As you go... Collect throughout Un'Goro Crater. These crystals can be found on the ground| [L][11184][7] |OBJ|2971|
+LOOT 7 Yellow Power Crystal |AYG|4501| |QID|4284.3| |N|As you go... Collect throughout Un'Goro Crater. These crystals can be found on the ground| [L][11188][7] |OBJ|2974|
+LOOT 7 Red Power Crystal |AYG|4501| |QID|4284.4| |N|As you go... Collect throughout Un'Goro Crater. These crystals can be found on the ground| [L][11186][7] |OBJ|2972|
+LOOT 15 Bloodpetal |AYG|4501| |QID|4141.1| |N|As you go... Kill any Bloodpetal mobs around Un'Goro| [L][11316][15]|
 
 C Super Sticky |QID|4504| |N|Kill Tar Beast or Tar Lord and collect 12 Super Sticky Tar in Lakkari Tar Pits (45.03, 15.95) (43.05, 17.95) (46.28, 19.45) (48.93, 20.46) (50.43, 26.64) (47.58, 31.75)|
-K Pterrordax |QID|4501.1| |N|Make a start for killing 10 Pterrordax and also collect 10 Webbed Pterrordax Scale for quest 'Shizzle's Flyer' in Lakkari Tar Pits. Tick this step to complete it later (56.91, 9.94)| |QO|10/10 Pterrordax slain|
+K Pterrordax |QID|4501.1| |N|Make a start for killing 10 Pterrordax in Lakkari Tar Pits. Tick this step to complete it later (56.91, 9.94)| |QO|10/10 Pterrordax slain|
+LOOT 10 Webbed Pterrordax Scale |QID|4503.1| |N|As you go... Collect from Pterrordax in Lakkari Tar Pits for quest 'Shizzle's Flyer' (56.91, 9.94)| [L][11829][10]
 
 R Fungal Rock |QID|4289| |N|Travel to Fungal Rock (63.86, 16.44)|
 T Chasing A-Me 01 (Part 1)|QID|4243| |N|Williden Marshal in Fungal Rock (67.65, 16.77)|

@@ -39,12 +39,12 @@ T The Balance of Nature (Part 2) |QID|457| |N|Conservator Ilthalaine in Shadowgl
 T A Friend in Need |QID|3519| |N|Dirania Silvershine in Shadowglen (60.84, 41.98)|
 A Iverron's Antidote (Part 1) |QID|3521| |N|Dirania Silvershine in Shadowglen (60.84, 41.98)|
 
-N 4 Moonpetal Lily |QID|3521.2| |N|Collect 4 Moonpetal Lily found around the edge of the pond in Shadowglen (57, 37)|
-N 7 Hyacinth Mushroom |QID|3521.1| |N|Collect 7 Hyacinth Mushroom found around the bottom of trees or dropped from Grellkin in Shadowglen (57, 37)|
+LOOT 4 Moonpetal Lily |QID|3521.2| |N|Collect around the edge of the pond in Shadowglen (57, 37)| [L][2246][4]
+LOOT 7 Hyacinth Mushroom |QID|3521.1| |N|Collect around the bottom of trees or dropped from Grellkin in Shadowglen (57, 37)| [L][2248][7]
 
 R Shadowthread Cave |QID|917| |N|Enter Shadowthread Cave (56.80, 31.65)|
 C Webwood Egg |QID|917| |N|Follow the path inside Shadowthread Cave and and collect Webwood Egg near the giant spider (56.82, 27.35) (55.85, 24.93) (56.65, 26.48)|
-N Webwood Ichor |QID|3521.3| |N|Collect Webwood Ichor from Webwood Spider in Shadowglen cave (57.31, 34.25)|
+LOOT 1 Webwood Ichor |QID|3521.3| |N|Collect from Webwood Spider in Shadowglen cave (57.31, 34.25)| [L][2251][1]
 
 T Webwood Egg |QID|917| |N|Gilshalan Windwalker in Aldrassil (57.81, 41.63)|
 A Tenaron's Summons |QID|920| |N|Gilshalan Windwalker in Aldrassil (57.81, 41.63)|
@@ -92,13 +92,13 @@ A Ferocitas the Dream Eater |QID|2459| |N|Tallonkai Swiftroot in Dolanaar (55.5,
 
 C Timberling Seeds |QID|918| |N|Kill Timberling and collect 8 Timberling Seed around Lake Al'Ameth (59, 72) (56, 65)|
 C Timberling Sprouts |QID|919| |N|Collect 12 Timberling Sprout from the ground around Lake Al'Ameth (59, 71)|
-K Nightsaber |QID|488.1| |N|Kill Nightsaber for 3 Nightsaber Fang (63.02, 60.45)|
+LOOT 3 Nightsaber Fang |AYG|919| |QID|488.1| |N|As you go... Kill Nightsaber for the quest 'Zenn's Bidding', it takes a long time to collect (63.02, 60.45)| [L][8149][3]
 T Timberling Seeds |QID|918| |N|Denalan in Lake Al'Ameth (60.91, 68.45)|
 A Rellian Greenspyre |QID|922| |N|Denalan in Lake Al'Ameth (60.91, 68.45)|
 T Timberling Sprouts |QID|919| |N|Denalan in Lake Al'Ameth (60.91, 68.45)|
 
-K Webwood Lurker |QID|488.2| |N|Kill Strigid Owl for 3 Strigid Owl Feather (58.80, 60.28)|
-K Strigid Owl |QID|488.3| |N|Kill Webwood Lurker for 3 Webwood Spider Silk in Lake Al'Ameth (52.83, 67.36)|
+LOOT 3 Strigid Owl Feather |AYG|919| |QID|488.2| |N|As you go... Kill Strigid Owl for the quest 'Zenn's Bidding', it takes a long time to collect (58.80, 60.28)| [L][8150][3]
+LOOT 3 Webwood Spider Silk |AYG|919| |QID|488.3| |N|As you go... Kill Webwood Lurker for the quest 'Zenn's Bidding', it takes a long time to collect in Lake Al'Ameth (52.83, 67.36)| [L][8151][3]
 
 T Zenn's Bidding |QID|488| |N|Zenn Foulhoof (60.41, 56.26)|
 A Seek Redemption! |QID|489| |N|Syral Bladeleaf in Dolanaar (56.10, 57.74)|
