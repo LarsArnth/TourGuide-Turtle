@@ -204,6 +204,16 @@ function TourGuide:UpdateStatusFrame()
 		self:ParseAndMapCoords(qid, action, note, quest, zonename) --, zone)
 	end
 
+	-- Check if the new current step is LOOT and if we already have the items
+	if action == "LOOT" then
+		self:Debug("Current step is LOOT, checking inventory...")
+		if self:CheckCurrentStepItems() then 
+			-- We already have the items, mark this step as turned in
+			self:Debug("Items already in inventory for LOOT step. Completing step: " .. quest)
+			self:SetTurnedIn() -- This will trigger UpdateStatusFrame again to find the *next* incomplete step
+			return -- Prevent the rest of the function from running for this completed step
+		end
+	end
 
 	local newtext = (quest or "???")..(note and " [?]" or "")
 
@@ -218,6 +228,7 @@ function TourGuide:UpdateStatusFrame()
 		f2:SetPoint(f2anchor, f, f2anchor, 0, 0)
 		f2:SetAlpha(1)
 		icon2:SetTexture(icon:GetTexture())
+		icon2:SetTexCoord(4/48, 44/48, 4/48, 44/48)
 		text2:SetText(text:GetText())
 		f2:Show()
 	end
