@@ -26,6 +26,13 @@ Optional addon: [TourGuide_Professions](https://github.com/cralor/TourGuide_Prof
 * Pop out frame for detailed view of quest sequence
 * Automatic mapping of coordinates with TomTom and questgiver locations from pfQuest if installed
 
+**Version 1.3 Features**
+* Auto-detect collected items for LOOT steps
+  * Automatically marks LOOT steps as complete when you collect the required items
+  * Works with both item IDs and item names
+  * Supports quantity requirements (e.g., "5 Linen Cloth")
+  * Real-time bag scanning for immediate feedback
+
 Guides list, plus few others didnt make it into the screenshot (Plaguelands, Silithus, Winterspring), too many for one screen xD
 ![image](https://github.com/user-attachments/assets/7d655a07-d8b9-48ad-b514-b95fcefb81a8)
 
@@ -42,3 +49,4 @@ Guides list, plus few others didnt make it into the screenshot (Plaguelands, Sil
 * Ez-mode
 * Gescht
 * Vaniron
+* LarsArnth
